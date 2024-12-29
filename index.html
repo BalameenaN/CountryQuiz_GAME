@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Country Quiz</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
     <h2 style="text-align: center;">Country and Capital Quiz</h2>
     <fieldset>
         <p class="heading">Countries and capital quiz</p>
         <hr>
-        <p style="text-align: center;">question</p>
+        <h4 style="text-align: center;" class="country"></h4>
         <div id="question">
-            
+
             <div id="btn1">
-            <button id="option">option1</button>
-            <button id="option">option2</button>
+                <button id="option" class="option1"></button>
+                <button id="option" class="option2"></button>
             </div>
             <div id="btn2">
-            <button id="option">option3</button>
-            <button id="option">option4</button>
+                <button id="option" class="option3"></button>
+                <button id="option" class="option4"></button>
             </div>
         </div>
-        <button id="next">next</button>
+        <button id="next">NEXT</button>
         <hr>
         <p>player1 need to play</p>
     </fieldset>
-
+    <div id = "player">
+    <h3 class="leftplayer">PLAYER1</h3>
+    <h3 class="rightplayer">PLAYER2</h3>
+    </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>

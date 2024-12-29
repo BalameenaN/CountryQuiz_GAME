@@ -1,6 +1,6 @@
 fieldset {
     width: 600px;
-    margin-top: 200px;
+    margin-top: 150px;
     margin-left: auto;
     margin-right: auto;
     border: 1px solid rgb(176, 195, 252);
@@ -24,4 +24,28 @@ hr {
     background-color: rgb(198, 205, 227);
     border: none;
     border-radius: 6px;
+    
+}
+#next{
+    width: 80px;
+    height:30px;
+    display: block;
+    margin:20px auto;
+    border: none;
+    border-radius: 6px;
+    background-color:rgb(176, 195, 252);
+    color:rgb(17, 17, 19);
+
+}
+#player{
+    margin-top:40px;
+}
+
+.leftplayer{
+    float:left;
+    margin-left:100px;
+}
+.rightplayer{
+    float: right;
+    margin-right:100px;
 }
