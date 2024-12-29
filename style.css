@@ -1,0 +1,27 @@
+fieldset {
+    width: 600px;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgb(176, 195, 252);
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgb(60, 62, 82);
+}
+
+hr {
+    border: 1px solid rgb(176, 195, 252);
+}
+
+#question {
+    display: flex;
+    justify-content: center;
+}
+
+#option {
+    width: 300px;
+    margin: 10px 10px;
+    height: 40px;
+    background-color: rgb(198, 205, 227);
+    border: none;
+    border-radius: 6px;
+}
