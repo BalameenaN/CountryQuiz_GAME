@@ -49,3 +49,16 @@ hr {
     float: right;
     margin-right:100px;
 }
+#start{
+    width: 80px;
+    text-align: center;
+    height:30px;
+    display: block;
+    margin:20px auto;
+    border: none;
+    padding-top: 10px;
+    border-radius: 6px;
+    background-color:rgb(86, 124, 240);
+    color:rgb(17, 17, 19);
+
+}
