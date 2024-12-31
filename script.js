@@ -63,18 +63,21 @@ let rightEl = document.getElementById("player2");
 let qno = document.querySelector(".heading");
 let results = document.querySelector("#result")
 let message = document.getElementById("msg");
-let playerTurn = document.querySelector("#result");
+let playerTurn = document.querySelector("#turn");
+let Box1 = document.getElementById("box1");
+let Box2 = document.getElementById("box2");
 let num1 = Math.floor(Math.random() * 11);
 let totalQuestions = 1;
 let player1 = 0;
 let player2 = 0;
 let ans = 1;
 let isClicked = false;
+let isPlayer1 = true;
 
 // initial values while loading the page
 valueGenerator(num1);
 var num = num1;
-console.log("call1");
+//console.log("call1");
 qno.textContent = `QUESTION NO. ${totalQuestions}`
 
 // function to generate random country and capital
@@ -149,7 +152,7 @@ optionEl.addEventListener('click', function (e) {
     // counting the number of points
     pointCounter(ans);
     leftEl.textContent = player1;
-    rightEl.textContent = player2;    
+    rightEl.textContent = player2;
 
 })
 
@@ -158,8 +161,22 @@ btnEl.addEventListener('click', function (e) {
     let randomNo = Math.floor(Math.random() * 11);
     //console.log(randomNo);
     //console.log("call3");
+
     //main if loop to check if any option is selected or not
     if (isClicked == true) {
+        //to display which player need to play the current turn
+        if (isPlayer1) {
+            playerTurn.textContent = "Player 2's TURN";
+            Box2.style.background = "rgb(153, 135, 247)";
+            Box1.style.background = "rgb(199, 200, 205)";
+        }
+        else {
+            playerTurn.textContent = "Player 1's TURN";
+            Box1.style.background = "rgb(153, 135, 247)";
+            Box2.style.background = "rgb(199, 200, 205)";
+        }
+        isPlayer1 = !isPlayer1;
+
         totalQuestions++;
         qno.textContent = `QUESTION NO. ${totalQuestions}`;
         //nested if to check if the chance has reached maximum no.
@@ -186,6 +203,7 @@ btnEl.addEventListener('click', function (e) {
             qno.style.color = "red";
             qno.textContent = "GAME OVER!"
             message.style.color = "red";
+            playerTurn.textContent="";
             //Determining the winner
             if (totalQuestions == 7 && player1 > player2) {
                 message.innerHTML = "<h2>PLAYER 1 is the winner</h2>";

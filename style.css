@@ -1,8 +1,12 @@
+body{
+    background: rgb(199, 200, 205);
+}
 fieldset {
     width: 600px;
     margin-top: 150px;
     margin-left: auto;
     margin-right: auto;
+    background: rgb(237, 239, 250) ;
     border: 1px solid rgb(176, 195, 252);
     border-radius: 8px;
     box-shadow: 0 3px 10px rgb(60, 62, 82);
@@ -44,10 +48,20 @@ hr {
 .leftplayer{
     float:left;
     margin-left:100px;
+   
 }
 .rightplayer{
     float: right;
     margin-right:100px;
+}
+#box1{
+    background-color: rgb(153, 135, 247);
+    padding: 5px 5px;
+    border-radius: 6px;
+}
+#box2{
+    padding: 5px 5px;
+    border-radius: 6px;
 }
 #start{
     width: 80px;
