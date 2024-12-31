@@ -77,7 +77,6 @@ let isPlayer1 = true;
 // initial values while loading the page
 valueGenerator(num1);
 var num = num1;
-//console.log("call1");
 qno.textContent = `QUESTION NO. ${totalQuestions}`
 
 // function to generate random country and capital
@@ -113,20 +112,17 @@ function pointCounter(a) {
     console.log(a, "a");
     if (totalQuestions % 2 != 0 && a == 1) {
         player1++;
-        //console.log(totalQuestions, "pointer1-call6");
     }
     else if (totalQuestions % 2 == 0 && a == 1) {
-        player2++;
-        //console.log(totalQuestions, "pointer2-call6");
+        player2++;   
     }
-
 }
 //Adding EventListener for the options through event bubbling
 optionEl.addEventListener('click', function (e) {
     isClicked = true;
 
     if (e.target.textContent == inputValue[num].capital) {
-        //console.log("inside if-call5");
+        
         e.target.style.background = "green";
         seperateBtn.forEach(function (b) {
             if (e.target != b) {
@@ -147,21 +143,19 @@ optionEl.addEventListener('click', function (e) {
         s.textContent = "Correct Answer is:";
         answer.textContent = inputValue[num].capital;
         ans = 0;
-        //console.log("inside else-call5");
+       
     }
     // counting the number of points
     pointCounter(ans);
     leftEl.textContent = player1;
     rightEl.textContent = player2;
-
 })
 
 //adding EventListener for NEXT button
 btnEl.addEventListener('click', function (e) {
     let randomNo = Math.floor(Math.random() * 11);
     //console.log(randomNo);
-    //console.log("call3");
-
+    
     //main if loop to check if any option is selected or not
     if (isClicked == true) {
         //to display which player need to play the current turn
@@ -188,9 +182,7 @@ btnEl.addEventListener('click', function (e) {
             })
             s.textContent = "";
             answer.textContent = "";
-            console.log("call4", randomNo);
             valueGenerator(randomNo);
-            //eventListener(randomNo);
             num = randomNo;
             isClicked = false;
         }
@@ -203,7 +195,7 @@ btnEl.addEventListener('click', function (e) {
             qno.style.color = "red";
             qno.textContent = "GAME OVER!"
             message.style.color = "red";
-            playerTurn.textContent="";
+            playerTurn.textContent = "";
             //Determining the winner
             if (totalQuestions == 7 && player1 > player2) {
                 message.innerHTML = "<h2>PLAYER 1 is the winner</h2>";
