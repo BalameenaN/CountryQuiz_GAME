@@ -76,3 +76,14 @@ hr {
     color:rgb(17, 17, 19);
 
 }
+.playAgain{
+    width: 80px;
+    height:30px;
+    display: block;
+    margin:20px auto;
+    border: none;
+    border-radius: 6px;
+    background-color:rgb(176, 195, 252);
+    color:rgb(17, 17, 19);
+
+}
