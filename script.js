@@ -113,7 +113,6 @@ function valueGenerator(random) {
 //function contains actions to be performed whent the next button is clicked
 function nextButton() {
 
-
     //main if loop to check if any option is selected or not
     if (isClicked == true) {
         totalQuestions++; //increasing the questions count during each next button click
@@ -168,8 +167,8 @@ function nextButton() {
             s.textContent = "";
             answer.style.color = "red";
             answer.textContent = "GAME OVER!";
-            qno.style.color = "red";
-            qno.textContent = "GAME OVER!"
+            //qno.style.color = "red";
+            qno.textContent = ""
             message.style.color = "green";
             playerTurn.textContent = "";
             //Determining the winner
@@ -261,72 +260,24 @@ optionEl.addEventListener('click', function (e) {
 
 })
 
+//adding event listener to get the hovering effect
+    
+/*seperateBtn.forEach((b=>{
+    if (e.target != b){
+    b.addEventListener('mouseenter',function(e){
+        b.style.background = "rgb(65, 111, 249)";
+    })
+    b.addEventListener('mouseleave',function(e){
+        b.style.background = "rgb(198, 205, 227)";
+    })
+}
+}))//foreach*/
+
 //adding EventListener for NEXT button
 btnEl.addEventListener('click', function (e) {
-    /* let randomNo = Math.floor(Math.random() * 11);
-     //console.log(randomNo);
-     
-     //main if loop to check if any option is selected or not
-     if (isClicked == true) {
-         //to display which player need to play the current turn
-         if (isPlayer1) {
-             playerTurn.textContent = "Player 2's TURN";
-             Box2.style.background = "rgb(153, 135, 247)";
-             Box1.style.background = "rgb(199, 200, 205)";
-         }
-         else {
-             playerTurn.textContent = "Player 1's TURN";
-             Box1.style.background = "rgb(153, 135, 247)";
-             Box2.style.background = "rgb(199, 200, 205)";
-         }
-         isPlayer1 = !isPlayer1;
- 
-         totalQuestions++;
-         qno.textContent = `QUESTION NO. ${totalQuestions}`;
-         //nested if to check if the chance has reached maximum no.
-         if (totalQuestions <= 6) {
- 
-             seperateBtn.forEach(function (b) {
-                 b.disabled = false;
-                 b.style.background = "rgb(198, 205, 227)";
-             })
-             s.textContent = "";
-             answer.textContent = "";
-             valueGenerator(randomNo);
-             num = randomNo;
-             isClicked = false;
-         }
-         //nested loop else
-         else {
-             btnEl.disabled = true;
-             s.textContent = "";
-             answer.style.color = "red";
-             answer.textContent = "GAME OVER!";
-             qno.style.color = "red";
-             qno.textContent = "GAME OVER!"
-             message.style.color = "red";
-             playerTurn.textContent = "";
-             //Determining the winner
-             if (totalQuestions == 7 && player1 > player2) {
-                 message.innerHTML = "<h2>PLAYER 1 is the winner</h2>";
-             }
-             else if (totalQuestions == 7 && player1 < player2) {
-                 //results.textContent = "PLAYER 2 is the winner"; 
-                 message.innerHTML = "<h2>PLAYER 2 is the winner</h2>";
-             }
-             else if (totalQuestions == 7 && player1 == player2) {
-                 //results.textContent = "It's a TIE";
-                 message.innerHTML = "<h2>It's a TIE</h2>";
-                 nextRound();
- 
-             }
-         }
-     }
-     //main loop else
-     else {
-         alert("Please select an option before clicking NEXT");
-     }*/
+    
     nextButton();
+    
 })
 
 //Adding EventListener to the Play Again button
