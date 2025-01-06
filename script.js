@@ -85,7 +85,7 @@ qno.textContent = `QUESTION NO. ${totalQuestions}`
 
 // function to generate random country and capital
 function valueGenerator(random) {
-    //uniqueNoArray.push(random);
+    
     countryEl.textContent = inputValue[random].country;
     let randomArray = [];
     randomArray.push(random);//pushing index of answer into the array
@@ -125,7 +125,6 @@ function nextButton() {
         randomNo = Math.floor(Math.random() * 11);
         if (uniqueNoArray.includes(randomNo)) {
             console.log("changing the value",randomNo);
-            //continue;
         }
         else {
             uniqueNoArray.push(randomNo);
@@ -167,7 +166,6 @@ function nextButton() {
             s.textContent = "";
             answer.style.color = "red";
             answer.textContent = "GAME OVER!";
-            //qno.style.color = "red";
             qno.textContent = ""
             message.style.color = "green";
             playerTurn.textContent = "";
@@ -195,7 +193,7 @@ function nextButton() {
 
 //function for counting the point secured by player
 function pointCounter(a) {
-    console.log(a, "a");
+    //console.log(a, "a");
     if (totalQuestions % 2 != 0 && a == 1) {
         player1++;
     }

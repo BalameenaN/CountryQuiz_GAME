@@ -1,1 +1,12 @@
 # CountryQuiz_GAME
+- Designed a game website that allows two players to play the game simultaneously.
+- The game is related to **Countries** and their **Capitals**.
+- Game is designed user-friendly using **CSS Properties**
+- Each Player gets **3 chances** in each game.
+- Each player need to select an option before clicking **Next** button.
+- At the end, based on the points secured by the player, the **winner** is announced.
+- If the player wants to play another round, they can continue it by clicking on **Play Again** button.
+- Used **DOM** properties, methods, and techniques to create a web application that provides a dynamic user experience.
+- Used **BOM**properties, methods, and techniques to facilitate creation of a dynamic web application.
+- Demonstrated proficiency with **event-driven programming and DOM events**.
+- Implemented basic form validation using any combination of built-in **HTML validation attributes and DOM-event-driven JavaScript validation**.

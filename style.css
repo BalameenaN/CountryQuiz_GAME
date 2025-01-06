@@ -54,12 +54,12 @@ hr {
 
 .leftplayer{
     float:left;
-    margin-left:100px;
+    margin-left:200px;
    
 }
 .rightplayer{
     float: right;
-    margin-right:100px;
+    margin-right:200px;
 }
 #box1{
     background-color: rgb(153, 135, 247);
