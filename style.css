@@ -1,19 +1,27 @@
 body{
-    background: rgb(199, 200, 205);
+    /*background: rgb(199, 200, 205);*/
+    height: 100%;
+    background-repeat: no-repeat;
+    background: linear-gradient(to right, #ad5389, #3c1053);
+    color: white;
+    
+  
 }
 fieldset {
     width: 600px;
     margin-top: 150px;
     margin-left: auto;
     margin-right: auto;
-    background: rgb(237, 239, 250) ;
+   /* background: rgb(237, 239, 250) ;
+    border: 1px solid rgb(176, 195, 252);*/
+    background:  #eaafc8;
     border: 1px solid rgb(176, 195, 252);
     border-radius: 8px;
     box-shadow: 0 3px 10px rgb(60, 62, 82);
 }
 
 hr {
-    border: 1px solid rgb(176, 195, 252);
+    border: 1px solid  #3c1053;
 }
 
 #question {
@@ -28,6 +36,7 @@ hr {
     background-color: rgb(198, 205, 227);
     border: none;
     border-radius: 6px;
+    font-size: 16px;
     
 }
 /*#option:hover{
@@ -43,6 +52,7 @@ hr {
     border-radius: 6px;
     background-color:rgb(176, 195, 252);
     color:rgb(17, 17, 19);
+    font-size: 15px;
 
 }
 #next:hover{

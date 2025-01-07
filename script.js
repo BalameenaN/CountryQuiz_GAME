@@ -136,12 +136,12 @@ function nextButton() {
         if (isPlayer1) {
             playerTurn.textContent = "Player 2's TURN";
             Box2.style.background = "rgb(153, 135, 247)";
-            Box1.style.background = "rgb(199, 200, 205)";
+            Box1.style.background = "#ad5389";
         }
         else {
             playerTurn.textContent = "Player 1's TURN";
             Box1.style.background = "rgb(153, 135, 247)";
-            Box2.style.background = "rgb(199, 200, 205)";
+            Box2.style.background = "#3c1053";
         }
         isPlayer1 = !isPlayer1;
 
